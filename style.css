@@ -37,11 +37,12 @@ nav a {
 }
 
 section {
-    max-width: 800px;
+    max-width: 95%;
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 h1, h2, h3 {
@@ -79,12 +80,27 @@ footer {
 }
 
 footer a, p{
-    color: #9e9d9d; /* Set the color for all links in the footer */
+    color: #9e9d9d;
     text-decoration: none;
 }
 
+.photo {
+    text-align: center;
+}
 
-/* Media query for smaller screens */
+.photo img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 50%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (min-width: 1000px) {
+    .photo img {
+        max-width: 30%; /* Set max-width to 20% for larger screens */
+    }
+}
+
 @media screen and (max-width: 768px) {
     .menu-toggle {
         display: block;
@@ -95,7 +111,7 @@ footer a, p{
         flex-direction: column;
         background-color: #444444d5;
         position: absolute;
-        top: 60px; /* Adjust as needed */
+        top: 60px; 
         left: 0;
         width: 100%;
         z-index: 1;
