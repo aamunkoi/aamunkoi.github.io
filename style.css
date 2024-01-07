@@ -6,23 +6,20 @@ body {
 }
 
 .fixed-background {
-    background-image: url('profile_photo.png'); /* Replace with the correct path */
+    background-image: url('profile_photo_mobile.png');
     background-attachment: fixed;
-    background-position:top;
+    background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     min-height: 100vh;
-    /* position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1; */
 }
 
 /* Use a different background image for mobile devices */
 @media (max-width: 768px) {
     .fixed-background {
-        background-image: url('profile_photo_mobile.png'); /* Replace with the correct path for mobile */
+        background-image: url('profile_photo_mobile.png'); 
+        background-position:center;
     }
 }
 
@@ -44,7 +41,7 @@ body {
     color: #fff;
     font-size: 50px;
     margin: 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.745);
 }
 
 .content p {
@@ -53,7 +50,7 @@ body {
     font-style: italic;
     font-weight: 200;
     margin: 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.745);
 }
 
 .additional_info {
