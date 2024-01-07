@@ -19,6 +19,13 @@ body {
     z-index: -1; */
 }
 
+/* Use a different background image for mobile devices */
+@media (max-width: 768px) {
+    .fixed-background {
+        background-image: url('profile_photo_mobile.png'); /* Replace with the correct path for mobile */
+    }
+}
+
 .content-container {
     position: absolute;
     top: 50%;
@@ -50,6 +57,6 @@ body {
 }
 
 .additional_info {
-    height:800px;
+    height:200px;
     text-align: center;
 }
