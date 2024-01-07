@@ -15,14 +15,6 @@ body {
     min-height: 100vh;
 }
 
-/* Use a different background image for mobile devices */
-@media (max-width: 768px) {
-    .fixed-background {
-        background-image: url('profile_photo_mobile.png'); 
-        background-position:center;
-    }
-}
-
 .content-container {
     position: absolute;
     top: 50%;
@@ -56,4 +48,23 @@ body {
 .additional_info {
     height:200px;
     text-align: center;
+}
+
+/* Use a different background image for mobile devices */
+@media (max-width: 768px) {
+    .fixed-background {
+        background-image: url('profile_photo.png'); 
+        background-position:center;
+        background-attachment: fixed;
+        min-height: 100vh;
+    }
+
+    .content-container {
+        position: absolute;
+        top: 60%;
+        left: 30%;
+        text-align:center;
+        z-index: 2;
+    }
+
 }
